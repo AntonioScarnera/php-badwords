@@ -4,7 +4,7 @@
    
     $parola = $_GET['word'];
 
-    if(isset($parola)){
+    if(isset($_GET['word'])){
         $newParagraph = str_replace($parola, '***', $paragraph);
     }else{
         $newParagraph = 'Inserisci una parola da censurare inserendo nella url: ?word=parola';
