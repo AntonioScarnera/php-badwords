@@ -2,9 +2,10 @@
 
     $paragraph = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit maiores commodi ipsum natus sint nulla.';
    
+    $parola = $_GET['word'];
 
-    if(isset($_GET['word'])){
-        $newParagraph = str_replace($_GET['word'], '***', $paragraph);
+    if(isset($parola)){
+        $newParagraph = str_replace($parola, '***', $paragraph);
     }else{
         $newParagraph = 'Inserisci una parola da censurare inserendo nella url: ?word=parola';
     }
